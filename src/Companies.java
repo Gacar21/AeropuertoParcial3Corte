@@ -1,23 +1,15 @@
-import java.util.List;
-
 public class Companies {
-    private String NombreCompanies;
-    private List<Vuelo> listaVuelo;
+    String Patrocinadores[][] = {
+            {"AVIANCA, VUELALATO, EL MAS ALLA, VUELO NORTE"},
+            {"TELECOYOTE, SUPERMAN, TECNOVUELOS, AVIANCO"},
+    } ;
 
-    public void MostrarVuelos() {
 
+    public String[][] getPatrocinadores() {
+        return Patrocinadores;
     }
 
-    public void buscarVuelos(){
-
-    }
-
-    public List<Vuelo> listVueloOrig(String ciudad) {
-
-        return List.of();
-    }
-
-    public List<Vuelo> listVueloDesti(String ciudad) {
-        return List.of();
+    public void setPatrocinadores(String[][] patrocinadores) {
+        Patrocinadores = patrocinadores;
     }
 }

@@ -1,10 +1,14 @@
-import java.util.List;
+public class Privado extends Aeropuertos {
+    String Patrocinadores[][] = {
+            {"GABRIEL S.A, ALKERIA, TRUMP, OBAMA"},
+            {"JUMBO, PETRO, MICHAEL JACKSON, LINLINK"},
+    } ;
 
-public class Privado extends  Aeropuertos{
-
-    private List<String> patrocinadores(){
-
-        return List.of();
+    public String[][] getPatrocinadores() {
+        return Patrocinadores;
     }
 
+    public void setPatrocinadores(String[][] patrocinadores) {
+        Patrocinadores = patrocinadores;
+    }
 }
