@@ -3,18 +3,20 @@ import java.util.List;
 
 public class Aeropuertos {
     String NomAero[][] = {
-            {"EL DORADO, GABRIELPUERTO, SIMON BOLIVAR, BOYACAPUERTO,"},
-            {"EL PLATINO, EL BRONCE, EL AMARILLO, EL NARANJA"},
+            {"1. EL DORADO, 2. GABRIELPUERTO, 3. SIMON BOLIVAR, 4. BOYACAPUERTO,"},
+            {"5. EL PLATINO, 6. EL BRONCE, 7. EL AMARILLO, 8. EL NARANJA"},
     } ;
 
     String Ciudad[][] = {
-            {"BOGOTA, BARRANCA, MEDELLIN, BUCARAMANGA"},
-            {"TUNJA, YONDO, SANTAMARTA, CHOCO"},
+            {"BOGOTA", "BARRANCA", "MEDELLIN", "BUCARAMANGA"},
+            {"TUNJA", "YONDO", "SANTAMARTA", "CHOCO"},
     } ;
 
+
+
     String Pais[][] = {
-            {"COLOMBIA, ESPAÑA, BRAZIL, JAPON"},
-            {"ARGENTINA, VENEZUELA, ECUADOR, PERU"},
+            {"COLOMBIA", "ESPAÑA", "BRAZIL", "JAPON"},
+            {"ARGENTINA", "VENEZUELA", "ECUADOR", "PERU"},
     } ;
 
     public String[][] getNomAero() {

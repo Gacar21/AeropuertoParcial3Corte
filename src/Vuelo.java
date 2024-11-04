@@ -1,25 +1,41 @@
 public class Vuelo {
 
+    String Origen[] = {"BARRANCA", "BOGOTA", "MEDELLIN" , "TOLIMA"};
+    String Destino[] = {"MEDELLIN" , " TUNJA", "BUCARAMANGA", "SANTAMARTA"};
+
+
+
     int MaxPasajeros = 20;
 
+
+
+
+    public String[] getOrigen() {
+        return Origen;
+    }
+
+    public void setOrigen(String[] origen) {
+        Origen = origen;
+    }
+
+    public String[] getDestino() {
+        return Destino;
+    }
+
+    public void setDestino(String[] destino) {
+        Destino = destino;
+    }
+
     String ID[][] = {
-            {"01512, 32524, 12534, 45875"},
-            {"12576, 12357, 12478, 45786"},
+            {"01512", "32524", "12534", "45875"},
+            {"12576", "12357", "12478", "45786"},
     } ;
 
-    String ciudadOrigen[][] = {
-            {"BARRANCA, BOGOTA, MEDELLIN, TOLIMA"},
-            {"LIMA, TUNJA, SANTANDER, BOYACA"},
-    } ;
 
-    String ciudadDestino[][] = {
-            {"YONDO, BUCARAMANGA, BOYACA, TUNJA"},
-            {"SANTANDER, BOYACA, LIMA, MEDELLIN"},
-    } ;
 
-    String Patrocinadores[][] = {
-            {"250.000, 300.000, 150.000, 78.000"},
-            {"180.000, 25.000, 75.000, 52.000"},
+    String Precio[][] = {
+            {"250.000", "300.000", "150.000", "78.000"},
+            {"180.000", "25.000", "75.000", "52.000"},
     } ;
 
     public int getMaxPasajeros() {
@@ -38,27 +54,11 @@ public class Vuelo {
         this.ID = ID;
     }
 
-    public String[][] getCiudadOrigen() {
-        return ciudadOrigen;
+    public String[][] getPrecio() {
+        return Precio;
     }
 
-    public void setCiudadOrigen(String[][] ciudadOrigen) {
-        this.ciudadOrigen = ciudadOrigen;
-    }
-
-    public String[][] getCiudadDestino() {
-        return ciudadDestino;
-    }
-
-    public void setCiudadDestino(String[][] ciudadDestino) {
-        this.ciudadDestino = ciudadDestino;
-    }
-
-    public String[][] getPatrocinadores() {
-        return Patrocinadores;
-    }
-
-    public void setPatrocinadores(String[][] patrocinadores) {
-        Patrocinadores = patrocinadores;
+    public void setPrecio(String[][] precio) {
+        Precio = precio;
     }
 }

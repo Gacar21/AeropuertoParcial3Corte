@@ -5,13 +5,6 @@ public class Pasajeros {
     String Nacionalidad;
 
 
-    public Pasajeros(String nombre, String numPasaporte, String asignarPuesto, String nacionalidad) {
-        this.nombre = nombre;
-        NumPasaporte = numPasaporte;
-        AsignarPuesto = asignarPuesto;
-        Nacionalidad = nacionalidad;
-    }
-
     public String getNombre() {
         return nombre;
     }

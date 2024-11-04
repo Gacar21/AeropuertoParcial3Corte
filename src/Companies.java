@@ -1,7 +1,7 @@
 public class Companies {
     String Patrocinadores[][] = {
-            {"AVIANCA, VUELALATO, EL MAS ALLA, VUELO NORTE"},
-            {"TELECOYOTE, SUPERMAN, TECNOVUELOS, AVIANCO"},
+            {"AVIANCA", "VUELALATO", "EL MAS ALLA", "VUELO NORTE"},
+            {"TELECOYOTE", "SUPERMAN", "TECNOVUELOS", "AVIANCO"},
     } ;
 
 
