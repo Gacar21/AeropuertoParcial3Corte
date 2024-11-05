@@ -2,44 +2,46 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Aeropuertos {
-    String NomAero[][] = {
-            {"1. EL DORADO, 2. GABRIELPUERTO, 3. SIMON BOLIVAR, 4. BOYACAPUERTO,"},
-            {"5. EL PLATINO, 6. EL BRONCE, 7. EL AMARILLO, 8. EL NARANJA"},
-    } ;
+    String NomAero[] = {"0. EL DORADO, 1. GABRIELPUERTO, 2. SIMON BOLIVAR, 3. BOYACAPUERTO,"};
 
-    String Ciudad[][] = {
-            {"BOGOTA", "BARRANCA", "MEDELLIN", "BUCARAMANGA"},
-            {"TUNJA", "YONDO", "SANTAMARTA", "CHOCO"},
-    } ;
+    String NomAeropubl[] = {"0. CHOCO, 1. AEROEXPRESS, 2.  BOLIVAR SIMON, 3. MONDONGO,"} ;
+
+    String Ciudad[] = {"BOGOTA", "BARRANCA", "MEDELLIN", "BUCARAMANGA"} ;
 
 
 
-    String Pais[][] = {
-            {"COLOMBIA", "ESPAÑA", "BRAZIL", "JAPON"},
-            {"ARGENTINA", "VENEZUELA", "ECUADOR", "PERU"},
-    } ;
+    String Pais[]= {"COLOMBIA", "ESPAÑA", "BRAZIL", "JAPON"};
 
-    public String[][] getNomAero() {
+
+    public String[] getNomAeropubl() {
+        return NomAeropubl;
+    }
+
+    public void setNomAeropubl(String[] nomAeropubl) {
+        NomAeropubl = nomAeropubl;
+    }
+
+    public String[] getNomAero() {
         return NomAero;
     }
 
-    public void setNomAero(String[][] nomAero) {
+    public void setNomAero(String[] nomAero) {
         NomAero = nomAero;
     }
 
-    public String[][] getCiudad() {
+    public String[] getCiudad() {
         return Ciudad;
     }
 
-    public void setCiudad(String[][] ciudad) {
+    public void setCiudad(String[] ciudad) {
         Ciudad = ciudad;
     }
 
-    public String[][] getPais() {
+    public String[] getPais() {
         return Pais;
     }
 
-    public void setPais(String[][] pais) {
+    public void setPais(String[] pais) {
         Pais = pais;
     }
 }

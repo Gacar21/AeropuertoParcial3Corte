@@ -26,17 +26,10 @@ public class Vuelo {
         Destino = destino;
     }
 
-    String ID[][] = {
-            {"01512", "32524", "12534", "45875"},
-            {"12576", "12357", "12478", "45786"},
-    } ;
+    String ID[] = {"01512", "32524", "12534", "45875"};
 
+    String Precio[] = {"250.000", "300.000", "150.000", "78.000"};
 
-
-    String Precio[][] = {
-            {"250.000", "300.000", "150.000", "78.000"},
-            {"180.000", "25.000", "75.000", "52.000"},
-    } ;
 
     public int getMaxPasajeros() {
         return MaxPasajeros;
@@ -46,19 +39,19 @@ public class Vuelo {
         MaxPasajeros = maxPasajeros;
     }
 
-    public String[][] getID() {
+    public String[] getID() {
         return ID;
     }
 
-    public void setID(String[][] ID) {
+    public void setID(String[] ID) {
         this.ID = ID;
     }
 
-    public String[][] getPrecio() {
+    public String[] getPrecio() {
         return Precio;
     }
 
-    public void setPrecio(String[][] precio) {
+    public void setPrecio(String[] precio) {
         Precio = precio;
     }
 }
