@@ -206,7 +206,7 @@ public class Main2 {
                                 System.out.println("SELECCIONA UN ASIENTO");
                                 int AsientoDis = sc.nextInt();
                                 publico++;
-                                Vuelo.getPuestos()[AsientoDis] = "ND";
+                                Vuelo.getPuestospubl()[AsientoDis] = "ND";
                                 if(vuelo.getPuestospubl()[AsientoDis].equals("ND")){
                                     System.out.println("/// ASIENTO ASIGNADO ///");
                                     System.out.println("GRACIAS POR VOLAR CON NOSOTROS");
