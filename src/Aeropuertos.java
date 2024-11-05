@@ -8,8 +8,6 @@ public class Aeropuertos {
 
     String Ciudad[] = {"BOGOTA", "BARRANCA", "MEDELLIN", "BUCARAMANGA"} ;
 
-
-
     String Pais[]= {"COLOMBIA", "ESPAÑA", "BRAZIL", "JAPON"};
 
 

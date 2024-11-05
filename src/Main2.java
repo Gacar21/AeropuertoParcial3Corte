@@ -36,9 +36,9 @@ public class Main2 {
                     System.out.println(aeropuerto.getNomAero()[i]);
                     System.out.println();
                 }
+                System.out.println("/// ELIGE UN AEROPUERTO ///");
+                System.out.println(" ");
                 int AeroDisp = sc.nextInt();
-                switch (AeroDisp){
-                    case 0:
                         System.out.println("AEROPUERTO " + aeropuerto.getNomAero()[AeroDisp]);
                         System.out.println("ELIJA LA COMPAÑÍA DE VUELO DE SU PREFERENCIA");
                         for (int i = 0; i < companies.getCompanies().length; i++) {
@@ -46,14 +46,14 @@ public class Main2 {
                             System.out.println();
                         }
                         System.out.println(" ");
-                        int Companie = sc.nextInt();
+                int Companie = sc.nextInt();
                         System.out.println(" ");
                         System.out.println("/// " + companies.getCompanies()[Companie] + " ///");
                         System.out.println("/// VUELOS DISPONIBLES ///");
                         for (int i = 0; i < 4; i++) {
                             System.out.println(i + ". " + vuelo.getOrigen()[i] + " - " + vuelo.getDestino()[i]);
                         }
-                        int VueloDis = sc.nextInt();
+                int VueloDis = sc.nextInt();
                         System.out.println("SU FACTURA");
                         System.out.println("AEROPUERTO PRIVADO " + aeropuerto.getNomAero()[AeroDisp]);
                         System.out.println("COMPAÑIA " + companies.getCompanies()[Companie]);
@@ -89,15 +89,33 @@ public class Main2 {
                         int Asigpuesto = sc.nextInt();
                         switch (Asigpuesto){
                             case 1:
+                                System.out.println("/// ASIENTOS DISPONIBLES ///");
+                                for (int i = 0; i < vuelo.getPuestos().length ; i++) {
+                                    System.out.println(vuelo.getPuestos()[i]);
+                                    System.out.println(" ");
+                                }
+                                System.out.println("SELECCIONA UN ASIENTO");
+                                int AsientoDis = sc.nextInt();
+                                Vuelo.getPuestos()[AsientoDis] = "ND";
+                                if(vuelo.getPuestos()[AsientoDis].equals("ND")){
+                                    System.out.println("/// ASIENTO NO DISPONIBLE ///");
+                                }else {
+                                    System.out.println("/// ASIENTO ASIGNADO ///");
+                                    System.out.println("GRACIAS POR VOLAR CON NOSOTROS");
+                                }
+                                break;
+                            case 2:
+                                System.out.println("GRACIAS POR USAR NUESTROS SERVICIOS");
+                                break;
+                            default:
+                                System.out.println("OPCION NO VALIDA");
 
                         }
-
-
-                   }
-
+            case 2:
 
                 }
 
+
+            }
         }
-    }
 
