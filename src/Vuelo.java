@@ -3,7 +3,8 @@ public class Vuelo {
     String Origen[] = {"BARRANCA", "BOGOTA", "MEDELLIN" , "TOLIMA"};
     String Destino[] = {"MEDELLIN" , " TUNJA", "BUCARAMANGA", "SANTAMARTA"};
 
-    static String[] puestos = {"1A", "2B", "3C", "4D", "5E", "6F", "7G", "8H"};
+    static String[] puestos = {"0A", "1B", "2C", "3D", "4E", "5F", "6G", "7H"};
+    static String[] puestospubl = {"0A", "1B", "2C", "3D", "4E", "5F", "6G", "7H"};
 
     String ID[] = {"01512", "32524", "12534", "45875"};
 
@@ -58,5 +59,13 @@ public class Vuelo {
 
     public void setPuestos(String[] puestos) {
         this.puestos = puestos;
+    }
+
+    public static String[] getPuestospubl() {
+        return puestospubl;
+    }
+
+    public static void setPuestospubl(String[] puestospubl) {
+        Vuelo.puestospubl = puestospubl;
     }
 }
