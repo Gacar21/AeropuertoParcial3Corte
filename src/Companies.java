@@ -1,7 +1,7 @@
 public class Companies {
-    String companies[] = {"1. AVIANCA", "2. VUELALATO", "3. EL MAS ALLA", " 4. VUELO NORTE"};
+    String companies[] = {"AVIANCA", "VUELALATO", "EL MAS ALLA", "VUELO NORTE"};
 
-    String companiesPubl[] = {"1. AVIANCAPOBRE ", "2. GABRIELUS EXPRESS ", "3. VUELOS3K", "4. AVIONESJET" };
+    String companiesPubl[] = {"AVIANCAPOBRE ", "GABRIELUS EXPRESS ", "VUELOS3K", "AVIONESJET" };
 
     public String[] getCompanies() {
         return companies;

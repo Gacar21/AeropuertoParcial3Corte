@@ -2,9 +2,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Aeropuertos {
-    String NomAero[] = {"0. EL DORADO, 1. GABRIELPUERTO, 2. SIMON BOLIVAR, 3. BOYACAPUERTO,"};
+    String NomAero[] = {"EL DORADO", "GABRIELPUERTO", "SIMON BOLIVAR", "BOYACAPUERTO,"};
 
-    String NomAeropubl[] = {"0. CHOCO, 1. AEROEXPRESS, 2.  BOLIVAR SIMON, 3. MONDONGO,"} ;
+    String NomAeropubl[] = {"CHOCO", "AEROEXPRESS","BOLIVAR SIMON", " MONDONGO,"} ;
 
     String Ciudad[] = {"BOGOTA", "BARRANCA", "MEDELLIN", "BUCARAMANGA"} ;
 
