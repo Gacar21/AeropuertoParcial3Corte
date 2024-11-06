@@ -13,21 +13,13 @@ public class Main2 {
 
         boolean ContinuarRegistro = true;
         stop:
-    while (ContinuarRegistro) {
+        while (ContinuarRegistro) {
 
-        System.out.println("""
-                ////// BIENVENIDO //////
-                 POR FAVOR INGRESE SUS DATOS""");
-        System.out.println(" ");
+
 
         if(publico != vuelo.getMaxPasajeros() || privad != vuelo.getMaxPasajeros()){
-
-            System.out.println("Ingrese su Nombre: ");
-            pasajero.setNombre(sc.nextLine());
-            System.out.println("Ingrese su Numero de Pasaporte: ");
-            pasajero.setNumPasaporte(sc.nextLine());
-            System.out.println("Ingrese su Nacionalidad: ");
-            pasajero.setNacionalidad(sc.nextLine());
+            System.out.println("""
+                ////// BIENVENIDO //////""");
             System.out.println(" ");
 
             System.out.println("""
@@ -37,10 +29,21 @@ public class Main2 {
                 3.SALIR""");
 
             int opcTipo = sc.nextInt();
+            sc.nextLine();
+
+            System.out.println(" INGRESE SUS DATOS ");
+            System.out.print("Ingrese su Nombre: ");
+            pasajero.setNombre(sc.nextLine());
+            System.out.print("Ingrese su Numero de Pasaporte: ");
+            pasajero.setNumPasaporte(sc.nextLine());
+            System.out.print("Ingrese su Nacionalidad: ");
+            pasajero.setNacionalidad(sc.nextLine());
+            System.out.println(" ");
+
             detener:
             switch (opcTipo){
                 case 1:
-                    System.out.println("AEROPUERTOS DISPONIBLES");
+                    System.out.println("AEROPUERTOS DISPONIBLES PRIVADOS");
                     for (int i = 0; i < aeropuerto.getNomAero().length ; i++) {
                         System.out.print(i + ". " + aeropuerto.getNomAero()[i] + " ");
                         System.out.println();
@@ -124,7 +127,7 @@ public class Main2 {
                             }else {
                                 System.out.println(" NO HAY MAS ASIENTOS DISPONIBLES ");
                                 System.out.println("GRACIAS POR USAR NUESTROS SERVICIOS");
-                                break   stop;
+                                break stop;
                             }
 
 
@@ -233,11 +236,13 @@ public class Main2 {
                             AsigpuestoPubl = 1;
 
                     }
-                 }
+            }
             System.out.println(" ");
-             }else {
-            System.out.println("NO HAY MAS PUESTOS DISPONIBLES");
-             }
+        }else {
+            System.out.println("NO HAY MAS PUESTOS DISPONIBLES ");
+        }
+
+
 
         }
     }
