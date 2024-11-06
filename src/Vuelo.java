@@ -1,7 +1,7 @@
 public class Vuelo {
 
-    String Origen[] = {"BARRANCA", "BOGOTA", "MEDELLIN" , "TOLIMA"};
-    String Destino[] = {"MEDELLIN" , " TUNJA", "BUCARAMANGA", "SANTAMARTA"};
+    String Origen[] = {"Los angeles", "Nueva York", "Dubai" , "Paris"};
+    String Destino[] = {"Nueva York" , " Los angeles", "Paris", "Dubai"};
 
     static String[] puestos = {"0A", "1B", "2C", "3D", "4E", "5F", "6G", "7H"};
     static String[] puestospubl = {"0A", "1B", "2C", "3D", "4E", "5F", "6G", "7H"};

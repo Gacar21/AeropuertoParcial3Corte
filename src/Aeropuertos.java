@@ -2,13 +2,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Aeropuertos {
-    String NomAero[] = {"EL DORADO", "GABRIELPUERTO", "SIMON BOLIVAR", "BOYACAPUERTO,"};
+    String NomAero[] = {"The Private Suite", "aeropuerto JFK", " Jetex", "París-Le Bourget,"};
 
-    String NomAeropubl[] = {"CHOCO", "AEROEXPRESS","BOLIVAR SIMON", " MONDONGO,"} ;
+    String NomAeropubl[] = {" John F. Kennedy", " O'Hare "," Hartsfield-Jackson", " Los Ángeles,"} ;
 
-    String Ciudad[] = {"BOGOTA", "BARRANCA", "MEDELLIN", "BUCARAMANGA"} ;
+    String Ciudad[] = {"Los Ángeles", "Nueva York", "Dubái", "París"} ;
 
-    String Pais[]= {"COLOMBIA", "ESPAÑA", "BRAZIL", "JAPON"};
+    String Pais[]= {"EE. UU", "EE. UU", "Árabes Unidos", "Francia"};
 
 
     public String[] getNomAeropubl() {

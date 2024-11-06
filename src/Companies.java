@@ -1,5 +1,5 @@
 public class Companies {
-    String companies[] = {"AVIANCA", "VUELALATO", "EL MAS ALLA", "VUELO NORTE"};
+    String companies[] = {": Privately Managed", "VUELALATO", "EL MAS ALLA", "VUELO NORTE"};
 
     String companiesPubl[] = {"AVIANCAPOBRE ", "GABRIELUS EXPRESS ", "VUELOS3K", "AVIONESJET" };
 

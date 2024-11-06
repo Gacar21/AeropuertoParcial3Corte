@@ -1,5 +1,8 @@
 public class Privado extends Aeropuertos {
-    String Patrocinadores[] = {"GABRIEL S.A", "ALKERIA", "TRUMP", "OBAMA"};
+    String Patrocinadores[] = {"Groupe ADP", "Neste ", "Louis Vuitton y Piaget", "TAG Group "};
+
+
+
 
     public String[] getPatrocinadores() {
         return Patrocinadores;

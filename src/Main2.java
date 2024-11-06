@@ -45,7 +45,7 @@ public class Main2 {
                 case 1:
                     System.out.println("AEROPUERTOS DISPONIBLES PRIVADOS");
                     for (int i = 0; i < aeropuerto.getNomAero().length ; i++) {
-                        System.out.print(i + ". " + aeropuerto.getNomAero()[i] + " ");
+                        System.out.print(i + ". " + aeropuerto.getNomAero()[i] + " " + " - " + aeropuerto.getPais()[i]);
                         System.out.println();
                     }
                     System.out.println("/// ELIGE UN AEROPUERTO ///");
@@ -54,7 +54,7 @@ public class Main2 {
                     System.out.println("AEROPUERTO " + aeropuerto.getNomAero()[AeroDisp]);
                     System.out.println("ELIJA LA COMPAÑÍA DE VUELO DE SU PREFERENCIA");
                     for (int i = 0; i < companies.getCompanies().length; i++) {
-                        System.out.print(i + ". " + companies.getCompanies()[i] + " ");
+                        System.out.print(i + ". " + companies.getCompanies()[i] + " " + " - " +  aeropuerto.getCiudad()[i]);
                         System.out.println();
                     }
                     System.out.println(" ");
