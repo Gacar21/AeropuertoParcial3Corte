@@ -294,39 +294,112 @@ public class Main2 {
 
                     switch (AsigpuestoPub) {
                         case 1:
-                            if (publico != vuelo.getMaxPasajeros()) {
-                                int AsientoDisPub;
-                                do {
-                                    System.out.println("/// ASIENTOS DISPONIBLES ///");
-                                    for (int i = 0; i < vuelo.getPuestospubl().length; i++) {
-                                        System.out.print(vuelo.getPuestospubl()[i] + " ");
-                                    }
-                                    System.out.println();
-                                    System.out.println("SELECCIONA UN ASIENTO");
-                                    AsientoDisPub = sc.nextInt();
-                                    if (AsientoDisPub < 0 || AsientoDisPub >= vuelo.getPuestos().length) {
-                                        System.out.println("Asiento no válido. Por favor, intente de nuevo.");
+                            if(VueloDisPub == 0){
+                                 if (publico != vuelo.getMaxPasajeros()) {
+                                     int AsientoDisPub;
+                                    do {
+                                        System.out.println("/// ASIENTOS DISPONIBLES ///");
+                                        for (int i = 0; i < vuelo.getVuelo1publico().length; i++) {
+                                            System.out.print(vuelo.getVuelo1publico()[i] + " ");
+                                        }
+                                        System.out.println();
+                                        System.out.println("SELECCIONA UN ASIENTO");
+                                        AsientoDisPub = sc.nextInt();
+                                        if (AsientoDisPub < 0 || AsientoDisPub >= vuelo.getVuelo1publico().length) {
+                                            System.out.println("Asiento no válido. Por favor, intente de nuevo.");
+                                            System.out.println(" ");
+                                            continue;
+                                        }
+                                        if (vuelo.getVuelo1publico()[AsientoDisPub].equals("ND")) {
+                                            System.out.println("/// ASIENTO NO DISPONIBLE ///");
+                                            System.out.println(" ");
+                                            continue;
+                                        }
+                                        publico++;
+                                        vuelo.getVuelo1publico()[AsientoDisPub] = "ND";
+                                        System.out.println("/// ASIENTO ASIGNADO ///");
+                                        System.out.println("GRACIAS POR VOLAR CON NOSOTROS");
                                         System.out.println(" ");
-                                        continue;
-                                    }
-                                    if (vuelo.getPuestospubl()[AsientoDisPub].equals("ND")) {
-                                        System.out.println("/// ASIENTO NO DISPONIBLE ///");
+                                        break;
+                                    } while (true);
+                                } else {
+                                    System.out.println(" NO HAY MAS ASIENTOS DISPONIBLES ");
+                                    System.out.println("GRACIAS POR USAR NUESTROS SERVICIOS");
+                                    break stop;
+                                }
+                                break detener;
+                            } else if (VueloDisPub == 1) {
+                                if (publico != vuelo.getMaxPasajeros()) {
+                                    int AsientoDisPub;
+                                    do {
+                                        System.out.println("/// ASIENTOS DISPONIBLES ///");
+                                        for (int i = 0; i < vuelo.getVuelo2publico().length; i++) {
+                                            System.out.print(vuelo.getVuelo2publico()[i] + " ");
+                                        }
+                                        System.out.println();
+                                        System.out.println("SELECCIONA UN ASIENTO");
+                                        AsientoDisPub = sc.nextInt();
+                                        if (AsientoDisPub < 0 || AsientoDisPub >= vuelo.getVuelo2publico().length) {
+                                            System.out.println("Asiento no válido. Por favor, intente de nuevo.");
+                                            System.out.println(" ");
+                                            continue;
+                                        }
+                                        if (vuelo.getVuelo2publico()[AsientoDisPub].equals("ND")) {
+                                            System.out.println("/// ASIENTO NO DISPONIBLE ///");
+                                            System.out.println(" ");
+                                            continue;
+                                        }
+                                        publico++;
+                                        vuelo.getVuelo2publico()[AsientoDisPub] = "ND";
+                                        System.out.println("/// ASIENTO ASIGNADO ///");
+                                        System.out.println("GRACIAS POR VOLAR CON NOSOTROS");
                                         System.out.println(" ");
-                                        continue;
-                                    }
-                                    publico++;
-                                    Vuelo.getPuestospubl()[AsientoDisPub] = "ND";
-                                    System.out.println("/// ASIENTO ASIGNADO ///");
-                                    System.out.println("GRACIAS POR VOLAR CON NOSOTROS");
-                                    System.out.println(" ");
-                                    break;
-                                } while (true);
-                            } else {
-                                System.out.println(" NO HAY MAS ASIENTOS DISPONIBLES ");
-                                System.out.println("GRACIAS POR USAR NUESTROS SERVICIOS");
-                                break stop;
+                                        break;
+                                    } while (true);
+                                } else {
+                                    System.out.println(" NO HAY MAS ASIENTOS DISPONIBLES ");
+                                    System.out.println("GRACIAS POR USAR NUESTROS SERVICIOS");
+                                    break stop;
+                                }
+                                break detener;
+                            }else if (VueloDisPub == 2){
+                                if (publico != vuelo.getMaxPasajeros()) {
+                                    int AsientoDisPub;
+                                    do {
+                                        System.out.println("/// ASIENTOS DISPONIBLES ///");
+                                        for (int i = 0; i < vuelo.getVuelo3publico().length; i++) {
+                                            System.out.print(vuelo.getVuelo3publico()[i] + " ");
+                                        }
+                                        System.out.println();
+                                        System.out.println("SELECCIONA UN ASIENTO");
+                                        AsientoDisPub = sc.nextInt();
+                                        if (AsientoDisPub < 0 || AsientoDisPub >= vuelo.getVuelo3publico().length) {
+                                            System.out.println("Asiento no válido. Por favor, intente de nuevo.");
+                                            System.out.println(" ");
+                                            continue;
+                                        }
+                                        if (vuelo.getVuelo3publico()[AsientoDisPub].equals("ND")) {
+                                            System.out.println("/// ASIENTO NO DISPONIBLE ///");
+                                            System.out.println(" ");
+                                            continue;
+                                        }
+                                        publico++;
+                                        vuelo.getVuelo3publico()[AsientoDisPub] = "ND";
+                                        System.out.println("/// ASIENTO ASIGNADO ///");
+                                        System.out.println("GRACIAS POR VOLAR CON NOSOTROS");
+                                        System.out.println(" ");
+                                        break;
+                                    } while (true);
+                                } else {
+                                    System.out.println(" NO HAY MAS ASIENTOS DISPONIBLES ");
+                                    System.out.println("GRACIAS POR USAR NUESTROS SERVICIOS");
+                                    break stop;
+                                }
+                                break detener;
                             }
-                            break detener;
+
+
+
                         case 2:
                             System.out.println("GRACIAS POR USAR NUESTROS SERVICIOS");
                             System.out.println(" ");
