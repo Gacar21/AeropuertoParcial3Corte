@@ -15,10 +15,41 @@ public class Vuelo {
     static String[] vuelo3privado = {"0A", "1B", "2C", "3D", "4E", "5F", "6G", "7H"};
     static String[] vuelo4privado = {"0A", "1B", "2C", "3D", "4E", "5F", "6G", "7H"};
 
+    static String[] vuelo1privado2 = {"0A", "1B", "2C", "3D", "4E", "5F", "6G", "7H"};
+    static String[] vuelo2privado3 = {"0A", "1B", "2C", "3D", "4E", "5F", "6G", "7H"};
+    static String[] vuelo3privado4 = {"0A", "1B", "2C", "3D", "4E", "5F", "6G", "7H"};
+    static String[] vuelo4privado5 = {"0A", "1B", "2C", "3D", "4E", "5F", "6G", "7H"};
+
+    static String[] vuelo1privado6 = {"0A", "1B", "2C", "3D", "4E", "5F", "6G", "7H"};
+    static String[] vuelo2privado7 = {"0A", "1B", "2C", "3D", "4E", "5F", "6G", "7H"};
+    static String[] vuelo3privado8 = {"0A", "1B", "2C", "3D", "4E", "5F", "6G", "7H"};
+    static String[] vuelo4privado9 = {"0A", "1B", "2C", "3D", "4E", "5F", "6G", "7H"};
+
+    static String[] vuelo5privado = {"0A", "1B", "2C", "3D", "4E", "5F", "6G", "7H"};
+    static String[] vuelo6privado = {"0A", "1B", "2C", "3D", "4E", "5F", "6G", "7H"};
+    static String[] vuelo7privado = {"0A", "1B", "2C", "3D", "4E", "5F", "6G", "7H"};
+    static String[] vuelo8privado = {"0A", "1B", "2C", "3D", "4E", "5F", "6G", "7H"};
+
+    //vuelos publicos
     static String[] vuelo1publico = {"0A", "1B", "2C", "3D", "4E", "5F", "6G", "7H"};
     static String[] vuelo2publico = {"0A", "1B", "2C", "3D", "4E", "5F", "6G", "7H"};
     static String[] vuelo3publico = {"0A", "1B", "2C", "3D", "4E", "5F", "6G", "7H"};
     static String[] vuelo4publico = {"0A", "1B", "2C", "3D", "4E", "5F", "6G", "7H"};
+
+    static String[] vuelo5publico = {"0A", "1B", "2C", "3D", "4E", "5F", "6G", "7H"};
+    static String[] vuelo6publico = {"0A", "1B", "2C", "3D", "4E", "5F", "6G", "7H"};
+    static String[] vuelo7publico = {"0A", "1B", "2C", "3D", "4E", "5F", "6G", "7H"};
+    static String[] vuelo8publico = {"0A", "1B", "2C", "3D", "4E", "5F", "6G", "7H"};
+
+    static String[] vuelo9publico = {"0A", "1B", "2C", "3D", "4E", "5F", "6G", "7H"};
+    static String[] vuelo10publico = {"0A", "1B", "2C", "3D", "4E", "5F", "6G", "7H"};
+    static String[] vuelo11publico = {"0A", "1B", "2C", "3D", "4E", "5F", "6G", "7H"};
+    static String[] vuelo12publico = {"0A", "1B", "2C", "3D", "4E", "5F", "6G", "7H"};
+
+    static String[] vuelo13publico = {"0A", "1B", "2C", "3D", "4E", "5F", "6G", "7H"};
+    static String[] vuelo14publico = {"0A", "1B", "2C", "3D", "4E", "5F", "6G", "7H"};
+    static String[] vuelo15publico = {"0A", "1B", "2C", "3D", "4E", "5F", "6G", "7H"};
+    static String[] vuelo16publico = {"0A", "1B", "2C", "3D", "4E", "5F", "6G", "7H"};
 
     String ID[] = {"01512", "32524", "12534", "45875"};
 
@@ -179,6 +210,198 @@ public class Vuelo {
     public static void setVuelo4publico(String[] vuelo4publico) {
         Vuelo.vuelo4publico = vuelo4publico;
 
+    }
 
+
+    public static String[] getVuelo1privado2() {
+        return vuelo1privado2;
+    }
+
+    public static void setVuelo1privado2(String[] vuelo1privado2) {
+        Vuelo.vuelo1privado2 = vuelo1privado2;
+    }
+
+    public static String[] getVuelo2privado3() {
+        return vuelo2privado3;
+    }
+
+    public static void setVuelo2privado3(String[] vuelo2privado3) {
+        Vuelo.vuelo2privado3 = vuelo2privado3;
+    }
+
+    public static String[] getVuelo3privado4() {
+        return vuelo3privado4;
+    }
+
+    public static void setVuelo3privado4(String[] vuelo3privado4) {
+        Vuelo.vuelo3privado4 = vuelo3privado4;
+    }
+
+    public static String[] getVuelo4privado5() {
+        return vuelo4privado5;
+    }
+
+    public static void setVuelo4privado5(String[] vuelo4privado5) {
+        Vuelo.vuelo4privado5 = vuelo4privado5;
+    }
+
+    public static String[] getVuelo1privado6() {
+        return vuelo1privado6;
+    }
+
+    public static void setVuelo1privado6(String[] vuelo1privado6) {
+        Vuelo.vuelo1privado6 = vuelo1privado6;
+    }
+
+    public static String[] getVuelo2privado7() {
+        return vuelo2privado7;
+    }
+
+    public static void setVuelo2privado7(String[] vuelo2privado7) {
+        Vuelo.vuelo2privado7 = vuelo2privado7;
+    }
+
+    public static String[] getVuelo3privado8() {
+        return vuelo3privado8;
+    }
+
+    public static void setVuelo3privado8(String[] vuelo3privado8) {
+        Vuelo.vuelo3privado8 = vuelo3privado8;
+    }
+
+    public static String[] getVuelo4privado9() {
+        return vuelo4privado9;
+    }
+
+    public static void setVuelo4privado9(String[] vuelo4privado9) {
+        Vuelo.vuelo4privado9 = vuelo4privado9;
+    }
+
+    public static String[] getVuelo5privado() {
+        return vuelo5privado;
+    }
+
+    public static void setVuelo5privado(String[] vuelo5privado) {
+        Vuelo.vuelo5privado = vuelo5privado;
+    }
+
+    public static String[] getVuelo6privado() {
+        return vuelo6privado;
+    }
+
+    public static void setVuelo6privado(String[] vuelo6privado) {
+        Vuelo.vuelo6privado = vuelo6privado;
+    }
+
+    public static String[] getVuelo7privado() {
+        return vuelo7privado;
+    }
+
+    public static void setVuelo7privado(String[] vuelo7privado) {
+        Vuelo.vuelo7privado = vuelo7privado;
+    }
+
+    public static String[] getVuelo8privado() {
+        return vuelo8privado;
+    }
+
+    public static void setVuelo8privado(String[] vuelo8privado) {
+        Vuelo.vuelo8privado = vuelo8privado;
+    }
+
+    public static String[] getVuelo5publico() {
+        return vuelo5publico;
+    }
+
+    public static void setVuelo5publico(String[] vuelo5publico) {
+        Vuelo.vuelo5publico = vuelo5publico;
+    }
+
+    public static String[] getVuelo6publico() {
+        return vuelo6publico;
+    }
+
+    public static void setVuelo6publico(String[] vuelo6publico) {
+        Vuelo.vuelo6publico = vuelo6publico;
+    }
+
+    public static String[] getVuelo7publico() {
+        return vuelo7publico;
+    }
+
+    public static void setVuelo7publico(String[] vuelo7publico) {
+        Vuelo.vuelo7publico = vuelo7publico;
+    }
+
+    public static String[] getVuelo8publico() {
+        return vuelo8publico;
+    }
+
+    public static void setVuelo8publico(String[] vuelo8publico) {
+        Vuelo.vuelo8publico = vuelo8publico;
+    }
+
+    public static String[] getVuelo9publico() {
+        return vuelo9publico;
+    }
+
+    public static void setVuelo9publico(String[] vuelo9publico) {
+        Vuelo.vuelo9publico = vuelo9publico;
+    }
+
+    public static String[] getVuelo10publico() {
+        return vuelo10publico;
+    }
+
+    public static void setVuelo10publico(String[] vuelo10publico) {
+        Vuelo.vuelo10publico = vuelo10publico;
+    }
+
+    public static String[] getVuelo11publico() {
+        return vuelo11publico;
+    }
+
+    public static void setVuelo11publico(String[] vuelo11publico) {
+        Vuelo.vuelo11publico = vuelo11publico;
+    }
+
+    public static String[] getVuelo12publico() {
+        return vuelo12publico;
+    }
+
+    public static void setVuelo12publico(String[] vuelo12publico) {
+        Vuelo.vuelo12publico = vuelo12publico;
+    }
+
+    public static String[] getVuelo13publico() {
+        return vuelo13publico;
+    }
+
+    public static void setVuelo13publico(String[] vuelo13publico) {
+        Vuelo.vuelo13publico = vuelo13publico;
+    }
+
+    public static String[] getVuelo14publico() {
+        return vuelo14publico;
+    }
+
+    public static void setVuelo14publico(String[] vuelo14publico) {
+        Vuelo.vuelo14publico = vuelo14publico;
+    }
+
+    public static String[] getVuelo15publico() {
+        return vuelo15publico;
+    }
+
+    public static void setVuelo15publico(String[] vuelo15publico) {
+        Vuelo.vuelo15publico = vuelo15publico;
+    }
+
+    public static String[] getVuelo16publico() {
+        return vuelo16publico;
+    }
+
+    public static void setVuelo16publico(String[] vuelo16publico) {
+        Vuelo.vuelo16publico = vuelo16publico;
     }
 }

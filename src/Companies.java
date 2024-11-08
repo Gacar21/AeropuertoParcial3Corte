@@ -5,16 +5,17 @@ public class Companies {
     String Bourget[] = {": EAsport ", "Playsport", "Xboxport.", "Sonysport"};
 
 
-    String companiesPubl[] = {"Air Djibouti ", "Iberia", "Olympic Airlines", "Finnair" };
+    String Kennedy[] = {"Air Djibouti ", "Iberia", "Olympic Airlines", "Finnair" };
+    String Hare[] = {"Air Djibouti ", "Iberia", "Olympic Airlines", "Finnair" };
+    String Hartsfield[] = {"Air Djibouti ", "Iberia", "Olympic Airlines", "Finnair" };
+    String Jackson[] = {"Air Djibouti ", "Iberia", "Olympic Airlines", "Finnair" };
 
-
-
-    public String[] getCompaniesPubl() {
-        return companiesPubl;
+    public String[] getKennedy() {
+        return Kennedy;
     }
 
-    public void setCompaniesPubl(String[] companiesPubl) {
-        this.companiesPubl = companiesPubl;
+    public void setKennedy(String[] kennedy) {
+        Kennedy = kennedy;
     }
 
     public String[] getJFK() {
@@ -47,5 +48,29 @@ public class Companies {
 
     public void setBourget(String[] bourget) {
         Bourget = bourget;
+    }
+
+    public String[] getHare() {
+        return Hare;
+    }
+
+    public void setHare(String[] hare) {
+        Hare = hare;
+    }
+
+    public String[] getHartsfield() {
+        return Hartsfield;
+    }
+
+    public void setHartsfield(String[] hartsfield) {
+        Hartsfield = hartsfield;
+    }
+
+    public String[] getJackson() {
+        return Jackson;
+    }
+
+    public void setJackson(String[] jackson) {
+        Jackson = jackson;
     }
 }
