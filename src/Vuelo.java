@@ -1,18 +1,24 @@
 public class Vuelo {
 
     String Origen[] = {"Los angeles", "Nueva York", "Dubai" , "Paris"};
+    String Origen2[] = {"Los angeles", "Nueva York", "Dubai" , "Paris"};
+    String Origen3[] = {"Los angeles", "Nueva York", "Dubai" , "Paris"};
+    String Origen4[] = {"Los angeles", "Nueva York", "Dubai" , "Paris"};
     String Destino[] = {"Nueva York" , " Los angeles", "Paris", "Dubai"};
+    String Destino2[] = {"Nueva York" , " Los angeles", "Paris", "Dubai"};
+    String Destino3[] = {"Nueva York" , " Los angeles", "Paris", "Dubai"};
+    String Destino4[] = {"Nueva York" , " Los angeles", "Paris", "Dubai"};
 
-    static String[] puestos = {"0A", "1B", "2C", "3D", "4E", "5F", "6G", "7H"};
-    static String[] puestospubl = {"0A", "1B", "2C", "3D", "4E", "5F", "6G", "7H"};
-
+    //vuelos privados
     static String[] vuelo1privado = {"0A", "1B", "2C", "3D", "4E", "5F", "6G", "7H"};
     static String[] vuelo2privado = {"0A", "1B", "2C", "3D", "4E", "5F", "6G", "7H"};
     static String[] vuelo3privado = {"0A", "1B", "2C", "3D", "4E", "5F", "6G", "7H"};
+    static String[] vuelo4privado = {"0A", "1B", "2C", "3D", "4E", "5F", "6G", "7H"};
 
     static String[] vuelo1publico = {"0A", "1B", "2C", "3D", "4E", "5F", "6G", "7H"};
     static String[] vuelo2publico = {"0A", "1B", "2C", "3D", "4E", "5F", "6G", "7H"};
     static String[] vuelo3publico = {"0A", "1B", "2C", "3D", "4E", "5F", "6G", "7H"};
+    static String[] vuelo4publico = {"0A", "1B", "2C", "3D", "4E", "5F", "6G", "7H"};
 
     String ID[] = {"01512", "32524", "12534", "45875"};
 
@@ -61,21 +67,6 @@ public class Vuelo {
         Precio = precio;
     }
 
-    public static String[] getPuestos() {
-        return puestos;
-    }
-
-    public void setPuestos(String[] puestos) {
-        this.puestos = puestos;
-    }
-
-    public static String[] getPuestospubl() {
-        return puestospubl;
-    }
-
-    public static void setPuestospubl(String[] puestospubl) {
-        Vuelo.puestospubl = puestospubl;
-    }
 
     public static String[] getVuelo1privado() {
         return vuelo1privado;
@@ -123,5 +114,71 @@ public class Vuelo {
 
     public static void setVuelo3publico(String[] vuelo3publico) {
         Vuelo.vuelo3publico = vuelo3publico;
+    }
+
+    public static String[] getVuelo4privado() {
+        return vuelo4privado;
+    }
+
+    public static void setVuelo4privado(String[] vuelo4privado) {
+        Vuelo.vuelo4privado = vuelo4privado;
+    }
+
+    public static String[] getVuelo4publico() {
+        return vuelo4publico;
+    }
+
+    public String[] getOrigen2() {
+        return Origen2;
+    }
+
+    public void setOrigen2(String[] origen2) {
+        Origen2 = origen2;
+    }
+
+    public String[] getOrigen3() {
+        return Origen3;
+    }
+
+    public void setOrigen3(String[] origen3) {
+        Origen3 = origen3;
+    }
+
+    public String[] getOrigen4() {
+        return Origen4;
+    }
+
+    public void setOrigen4(String[] origen4) {
+        Origen4 = origen4;
+    }
+
+    public String[] getDestino2() {
+        return Destino2;
+    }
+
+    public void setDestino2(String[] destino2) {
+        Destino2 = destino2;
+    }
+
+    public String[] getDestino3() {
+        return Destino3;
+    }
+
+    public void setDestino3(String[] destino3) {
+        Destino3 = destino3;
+    }
+
+    public String[] getDestino4() {
+        return Destino4;
+    }
+
+    public void setDestino4(String[] destino4) {
+        Destino4 = destino4;
+    }
+
+    public static void setVuelo4publico(String[] vuelo4publico) {
+        Vuelo.vuelo4publico = vuelo4publico;
+
+
     }
 }
