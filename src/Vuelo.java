@@ -1,13 +1,13 @@
 public class Vuelo {
 
-    String Origen[] = {"Los angeles", "Nueva York", "Dubai" , "Paris"};
-    String Origen2[] = {"Los angeles", "Nueva York", "Dubai" , "Paris"};
-    String Origen3[] = {"Los angeles", "Nueva York", "Dubai" , "Paris"};
-    String Origen4[] = {"Los angeles", "Nueva York", "Dubai" , "Paris"};
-    String Destino[] = {"Nueva York" , " Los angeles", "Paris", "Dubai"};
-    String Destino2[] = {"Nueva York" , " Los angeles", "Paris", "Dubai"};
-    String Destino3[] = {"Nueva York" , " Los angeles", "Paris", "Dubai"};
-    String Destino4[] = {"Nueva York" , " Los angeles", "Paris", "Dubai"};
+    String Origen[] = {"Tokio", "Moscú", "Sídney", "Río de Janeiro"};
+    String Origen2[] = {"Beijing", "Londres", "Johannesburgo", "México D.F."};
+    String Origen3[] = {"Singapur", "Roma", "Toronto", "Nairobi"};
+    String Origen4[] = {"Berlín", "Buenos Aires", "Bangkok", "Lisboa"};
+    String Destino[] = {"Moscú", "Tokio", "Río de Janeiro", "Sídney"};
+    String Destino2[] = {"Londres", "Beijing", "México D.F.", "Johannesburgo"};
+    String Destino3[] = {"Roma", "Singapur", "Nairobi", "Toronto"};
+    String Destino4[] = {"Buenos Aires", "Berlín", "Lisboa", "Bangkok"};
 
     //vuelos privados
     static String[] vuelo1privado = {"0A", "1B", "2C", "3D", "4E", "5F", "6G", "7H"};

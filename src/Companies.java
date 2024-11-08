@@ -1,14 +1,16 @@
 public class Companies {
-    String JFK[] = {": Privately Managed", "Qatar Airways", "Singapore Airlines.", "EVA Air"};
-    String privatesuite[] = {": EAsport ", "Playsport", "Xboxport.", "Sonysport"};
-    String Jetex[] = {": EAsport ", "Playsport", "Xboxport.", "Sonysport"};
-    String Bourget[] = {": EAsport ", "Playsport", "Xboxport.", "Sonysport"};
 
+    //compañias de aeropuertos privados
+    String JFK[] = {": Privately Managed", "Emirates", "Turkish Airlines", "Cathay Pacific"};
+    String privatesuite[] = {": EAsport ", "Etihad", "Korean Air", "All Nippon Airways"};
+    String Jetex[] = {": EAsport ", "Lufthansa", "Air France", "British Airways"};
+    String Bourget[] = {": EAsport ", "Swiss International", "Qantas", "Aeroflot"};
 
-    String Kennedy[] = {"Air Djibouti ", "Iberia", "Olympic Airlines", "Finnair" };
-    String Hare[] = {"Air Djibouti ", "Iberia", "Olympic Airlines", "Finnair" };
-    String Hartsfield[] = {"Air Djibouti ", "Iberia", "Olympic Airlines", "Finnair" };
-    String Jackson[] = {"Air Djibouti ", "Iberia", "Olympic Airlines", "Finnair" };
+    // compañias de aeropuertos publicos
+    String Kennedy[] = {"Ethiopian Airlines", "Iberia", "Aegean Airlines", "Finnair" };
+    String Hare[] = {"TAP Air Portugal", "Alitalia", "Olympic Air", "SAS Scandinavian" };
+    String Hartsfield[] = {"Air Canada", "LOT Polish", "Avianca", "Eurowings" };
+    String Jackson[] = {"JetBlue", "LATAM", "Kenya Airways", "TAP Air Portugal" };
 
     public String[] getKennedy() {
         return Kennedy;
