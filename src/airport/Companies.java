@@ -1,3 +1,5 @@
+package airport;
+
 public class Companies {
 
     //compañias de aeropuertos privados

@@ -1,3 +1,5 @@
+package airport;
+
 public class Pasajeros {
     String nombre;
     String NumPasaporte;

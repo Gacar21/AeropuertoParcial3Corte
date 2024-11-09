@@ -1,5 +1,4 @@
-import java.util.ArrayList;
-import java.util.List;
+package airport;
 
 public class Aeropuertos {
     String NomAero[] = {"The Private Suite", "aeropuerto JFK", " Jetex", "París-Le Bourget,"};

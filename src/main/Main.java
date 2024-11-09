@@ -1,3 +1,7 @@
+package main;
+
+import airport.*;
+
 import java.util.Scanner;
 
 public class Main {
@@ -11,6 +15,9 @@ public class Main {
         Public publi = new Public();
         int privad = 0;
         int publico = 0;
+
+        // metodo para conectar nuestra base de datos
+
         boolean ContinuarRegistro = true;
         stop:
         while (ContinuarRegistro) {
@@ -107,26 +114,36 @@ public class Main {
                                 switch (Companie) {
                                     case 0:
                                         System.out.println("PATROCINADOR: " + privado.getPatrocinadores()[0]);
-                                        System.out.println("VUELO: " + vuelo.getID()[0] + " " + vuelo.getOrigen2()[VueloDis] + " - " + vuelo.getDestino()[VueloDis]);
-                                        System.out.println("UBICADO: " + aeropuerto.getCiudad()[0] + " " + aeropuerto.getPais()[0]);
+                                        System.out.println("VUELO: " + vuelo.getID()[0] + " "
+                                                + vuelo.getOrigen2()[VueloDis] + " - " + vuelo.getDestino()[VueloDis]);
+
+                                        System.out.println("UBICADO: " + aeropuerto.getCiudad()[0] +
+                                                " " + aeropuerto.getPais()[0]);
                                         System.out.println("PRECIO: " + vuelo.getPrecio()[0]);
+
                                         break;
                                     case 1:
                                         System.out.println("PATROCINADOR: " + privado.getPatrocinadores()[1]);
-                                        System.out.println("VUELO: " + vuelo.getID()[1] + " " + vuelo.getOrigen2()[VueloDis] + " - " + vuelo.getDestino()[VueloDis]);
-                                        System.out.println("UBICADO: " + aeropuerto.getCiudad()[1] + " " + aeropuerto.getPais()[1]);
+                                        System.out.println("VUELO: " + vuelo.getID()[1] + " "
+                                                + vuelo.getOrigen2()[VueloDis] + " - " + vuelo.getDestino()[VueloDis]);
+                                        System.out.println("UBICADO: " + aeropuerto.getCiudad()[1] + " "
+                                                + aeropuerto.getPais()[1]);
                                         System.out.println("PRECIO: " + vuelo.getPrecio()[1]);
                                         break;
                                     case 2:
                                         System.out.println("PATROCINADOR: " + privado.getPatrocinadores()[2]);
-                                        System.out.println("VUELO: " + vuelo.getID()[2] + " " + vuelo.getOrigen2()[VueloDis] + " - " + vuelo.getDestino()[VueloDis]);
-                                        System.out.println("UBICADO: " + aeropuerto.getCiudad()[2] + " " + aeropuerto.getPais()[2]);
+                                        System.out.println("VUELO: " + vuelo.getID()[2] + " "
+                                                + vuelo.getOrigen2()[VueloDis] + " - " + vuelo.getDestino()[VueloDis]);
+                                        System.out.println("UBICADO: " + aeropuerto.getCiudad()[2] + " "
+                                                + aeropuerto.getPais()[2]);
                                         System.out.println("PRECIO: " + vuelo.getPrecio()[2]);
                                         break;
                                     case 3:
                                         System.out.println("PATROCINADOR: " + privado.getPatrocinadores()[3]);
-                                        System.out.println("VUELO: " + vuelo.getID()[3] + " " + vuelo.getOrigen2()[VueloDis] + " - " + vuelo.getDestino()[VueloDis]);
-                                        System.out.println("UBICADO: " + aeropuerto.getCiudad()[3] + " " + aeropuerto.getPais()[3]);
+                                        System.out.println("VUELO: " + vuelo.getID()[3] + " "
+                                                + vuelo.getOrigen2()[VueloDis] + " - " + vuelo.getDestino()[VueloDis]);
+                                        System.out.println("UBICADO: " + aeropuerto.getCiudad()[3] + " "
+                                                + aeropuerto.getPais()[3]);
                                         System.out.println("PRECIO: " + vuelo.getPrecio()[3]);
                                         break;
                                 }
@@ -159,8 +176,10 @@ public class Main {
                                                     System.out.println();
                                                     System.out.println("SELECCIONA UN ASIENTO");
                                                     AsientoDisPub = sc.nextInt();
-                                                    if (AsientoDisPub < 0 || AsientoDisPub >= vuelo.getVuelo1privado().length) {
-                                                        System.out.println("Asiento no válido. Por favor, intente de nuevo.");
+                                                    if (AsientoDisPub < 0 || AsientoDisPub
+                                                            >= vuelo.getVuelo1privado().length) {
+                                                        System.out.println("Asiento no válido. " +
+                                                                "Por favor, intente de nuevo.");
                                                         System.out.println(" ");
                                                         continue;
                                                     }
@@ -193,8 +212,10 @@ public class Main {
                                                     System.out.println();
                                                     System.out.println("SELECCIONA UN ASIENTO");
                                                     AsientoDis = sc.nextInt();
-                                                    if (AsientoDis < 0 || AsientoDis >= vuelo.getVuelo2privado().length) {
-                                                        System.out.println("Asiento no válido. Por favor, intente de nuevo.");
+                                                    if (AsientoDis < 0 || AsientoDis >=
+                                                            vuelo.getVuelo2privado().length) {
+                                                        System.out.println("Asiento no válido. Por favor," +
+                                                                " intente de nuevo.");
                                                         System.out.println(" ");
                                                         continue;
                                                     }
@@ -227,8 +248,10 @@ public class Main {
                                                     System.out.println();
                                                     System.out.println("SELECCIONA UN ASIENTO");
                                                     AsientoDis = sc.nextInt();
-                                                    if (AsientoDis < 0 || AsientoDis >= vuelo.getVuelo3privado().length) {
-                                                        System.out.println("Asiento no válido. Por favor, intente de nuevo.");
+                                                    if (AsientoDis < 0 || AsientoDis >=
+                                                            vuelo.getVuelo3privado().length) {
+                                                        System.out.println("Asiento no válido. Por favor, " +
+                                                                "intente de nuevo.");
                                                         System.out.println(" ");
                                                         continue;
                                                     }
@@ -261,8 +284,10 @@ public class Main {
                                                     System.out.println();
                                                     System.out.println("SELECCIONA UN ASIENTO");
                                                     AsientoDis = sc.nextInt();
-                                                    if (AsientoDis < 0 || AsientoDis >= vuelo.getVuelo4privado().length) {
-                                                        System.out.println("Asiento no válido. Por favor, intente de nuevo.");
+                                                    if (AsientoDis < 0 || AsientoDis >=
+                                                            vuelo.getVuelo4privado().length) {
+                                                        System.out.println("Asiento no válido. Por favor, " +
+                                                                "intente de nuevo.");
                                                         System.out.println(" ");
                                                         continue;
                                                     }
@@ -298,7 +323,8 @@ public class Main {
                                 do {
                                     System.out.println("ELIJA LA COMPAÑÍA DE VUELO DE SU PREFERENCIA");
                                     for (int i = 0; i < companies.getJFK().length; i++) {
-                                        System.out.print(i + ". " + companies.getJFK()[i] + " " + " - " + aeropuerto.getCiudad()[i]);
+                                        System.out.print(i + ". " + companies.getJFK()[i] + " " +
+                                                " - " + aeropuerto.getCiudad()[i]);
                                         System.out.println();
                                     }
                                     System.out.println(" ");
@@ -315,7 +341,8 @@ public class Main {
                                 do {
                                     System.out.println("/// VUELOS DISPONIBLES ///");
                                     for (int i = 0; i < 4; i++) {
-                                        System.out.println(i + ". " + vuelo.getOrigen()[i] + " - " + vuelo.getDestino2()[i]);
+                                        System.out.println(i + ". " + vuelo.getOrigen()[i] + " - "
+                                                + vuelo.getDestino2()[i]);
                                     }
                                     VueloDis2 = sc.nextInt();
                                     if (VueloDis2 < 0 || VueloDis2 >= 4) {
@@ -330,26 +357,34 @@ public class Main {
                                 switch (Companie2) {
                                     case 0:
                                         System.out.println("PATROCINADOR: " + privado.getPatrocinadores()[0]);
-                                        System.out.println("VUELO: " + vuelo.getID()[0] + " " + vuelo.getOrigen()[VueloDis2] + " - " + vuelo.getDestino2()[VueloDis2]);
-                                        System.out.println("UBICADO: " + aeropuerto.getCiudad()[0] + " " + aeropuerto.getPais()[0]);
+                                        System.out.println("VUELO: " + vuelo.getID()[0] + " " +
+                                                vuelo.getOrigen()[VueloDis2] + " - " + vuelo.getDestino2()[VueloDis2]);
+                                        System.out.println("UBICADO: " + aeropuerto.getCiudad()[0] + " "
+                                                + aeropuerto.getPais()[0]);
                                         System.out.println("PRECIO: " + vuelo.getPrecio()[0]);
                                         break;
                                     case 1:
                                         System.out.println("PATROCINADOR: " + privado.getPatrocinadores()[1]);
-                                        System.out.println("VUELO: " + vuelo.getID()[1] + " " + vuelo.getOrigen()[VueloDis2] + " - " + vuelo.getDestino2()[VueloDis2]);
-                                        System.out.println("UBICADO: " + aeropuerto.getCiudad()[1] + " " + aeropuerto.getPais()[1]);
+                                        System.out.println("VUELO: " + vuelo.getID()[1] + " " +
+                                                vuelo.getOrigen()[VueloDis2] + " - " + vuelo.getDestino2()[VueloDis2]);
+                                        System.out.println("UBICADO: " + aeropuerto.getCiudad()[1] + " " +
+                                                aeropuerto.getPais()[1]);
                                         System.out.println("PRECIO: " + vuelo.getPrecio()[1]);
                                         break;
                                     case 2:
                                         System.out.println("PATROCINADOR: " + privado.getPatrocinadores()[2]);
-                                        System.out.println("VUELO: " + vuelo.getID()[2] + " " + vuelo.getOrigen()[VueloDis2] + " - " + vuelo.getDestino2()[VueloDis2]);
-                                        System.out.println("UBICADO: " + aeropuerto.getCiudad()[2] + " " + aeropuerto.getPais()[2]);
+                                        System.out.println("VUELO: " + vuelo.getID()[2] + " " +
+                                                vuelo.getOrigen()[VueloDis2] + " - " + vuelo.getDestino2()[VueloDis2]);
+                                        System.out.println("UBICADO: " + aeropuerto.getCiudad()[2] + " " +
+                                                aeropuerto.getPais()[2]);
                                         System.out.println("PRECIO: " + vuelo.getPrecio()[2]);
                                         break;
                                     case 3:
                                         System.out.println("PATROCINADOR: " + privado.getPatrocinadores()[3]);
-                                        System.out.println("VUELO: " + vuelo.getID()[3] + " " + vuelo.getOrigen()[VueloDis2] + " - " + vuelo.getDestino2()[VueloDis2]);
-                                        System.out.println("UBICADO: " + aeropuerto.getCiudad()[3] + " " + aeropuerto.getPais()[3]);
+                                        System.out.println("VUELO: " + vuelo.getID()[3] + " " +
+                                                vuelo.getOrigen()[VueloDis2] + " - " + vuelo.getDestino2()[VueloDis2]);
+                                        System.out.println("UBICADO: " + aeropuerto.getCiudad()[3] + " "
+                                                + aeropuerto.getPais()[3]);
                                         System.out.println("PRECIO: " + vuelo.getPrecio()[3]);
                                         break;
                                 }
@@ -382,8 +417,10 @@ public class Main {
                                                     System.out.println();
                                                     System.out.println("SELECCIONA UN ASIENTO");
                                                     AsientoDisPub = sc.nextInt();
-                                                    if (AsientoDisPub < 0 || AsientoDisPub >= vuelo.getVuelo1privado2().length) {
-                                                        System.out.println("Asiento no válido. Por favor, intente de nuevo.");
+                                                    if (AsientoDisPub < 0 || AsientoDisPub >=
+                                                            vuelo.getVuelo1privado2().length) {
+                                                        System.out.println("Asiento no válido. " +
+                                                                "Por favor, intente de nuevo.");
                                                         System.out.println(" ");
                                                         continue;
                                                     }
@@ -416,8 +453,10 @@ public class Main {
                                                     System.out.println();
                                                     System.out.println("SELECCIONA UN ASIENTO");
                                                     AsientoDis = sc.nextInt();
-                                                    if (AsientoDis < 0 || AsientoDis >= vuelo.getVuelo2privado3().length) {
-                                                        System.out.println("Asiento no válido. Por favor, intente de nuevo.");
+                                                    if (AsientoDis < 0 || AsientoDis >=
+                                                            vuelo.getVuelo2privado3().length) {
+                                                        System.out.println("Asiento no válido. Por favor," +
+                                                                " intente de nuevo.");
                                                         System.out.println(" ");
                                                         continue;
                                                     }
@@ -450,8 +489,10 @@ public class Main {
                                                     System.out.println();
                                                     System.out.println("SELECCIONA UN ASIENTO");
                                                     AsientoDis = sc.nextInt();
-                                                    if (AsientoDis < 0 || AsientoDis >= vuelo.getVuelo3privado4().length) {
-                                                        System.out.println("Asiento no válido. Por favor, intente de nuevo.");
+                                                    if (AsientoDis < 0 || AsientoDis >=
+                                                            vuelo.getVuelo3privado4().length) {
+                                                        System.out.println("Asiento no válido. Por favor," +
+                                                                " intente de nuevo.");
                                                         System.out.println(" ");
                                                         continue;
                                                     }
@@ -484,8 +525,10 @@ public class Main {
                                                     System.out.println();
                                                     System.out.println("SELECCIONA UN ASIENTO");
                                                     AsientoDis = sc.nextInt();
-                                                    if (AsientoDis < 0 || AsientoDis >= vuelo.getVuelo4privado5().length) {
-                                                        System.out.println("Asiento no válido. Por favor, intente de nuevo.");
+                                                    if (AsientoDis < 0 || AsientoDis >=
+                                                            vuelo.getVuelo4privado5().length) {
+                                                        System.out.println("Asiento no válido. Por favor, " +
+                                                                "intente de nuevo.");
                                                         System.out.println(" ");
                                                         continue;
                                                     }
@@ -537,7 +580,8 @@ public class Main {
                                 do {
                                     System.out.println("/// VUELOS DISPONIBLES ///");
                                     for (int i = 0; i < 4; i++) {
-                                        System.out.println(i + ". " + vuelo.getOrigen3()[i] + " - " + vuelo.getDestino3()[i]);
+                                        System.out.println(i + ". " + vuelo.getOrigen3()[i] + " - "
+                                                + vuelo.getDestino3()[i]);
                                     }
                                     VueloDis3 = sc.nextInt();
                                     if (VueloDis3 < 0 || VueloDis3 >= 4) {
@@ -552,26 +596,34 @@ public class Main {
                                 switch (Companie3) {
                                     case 0:
                                         System.out.println("PATROCINADOR: " + privado.getPatrocinadores()[0]);
-                                        System.out.println("VUELO: " + vuelo.getID()[0] + " " + vuelo.getOrigen3()[VueloDis3] + " - " + vuelo.getDestino3()[VueloDis3]);
-                                        System.out.println("UBICADO: " + aeropuerto.getCiudad()[0] + " " + aeropuerto.getPais()[0]);
+                                        System.out.println("VUELO: " + vuelo.getID()[0] + " " +
+                                                vuelo.getOrigen3()[VueloDis3] + " - " + vuelo.getDestino3()[VueloDis3]);
+                                        System.out.println("UBICADO: " + aeropuerto.getCiudad()[0] + " "
+                                                + aeropuerto.getPais()[0]);
                                         System.out.println("PRECIO: " + vuelo.getPrecio()[0]);
                                         break;
                                     case 1:
                                         System.out.println("PATROCINADOR: " + privado.getPatrocinadores()[1]);
-                                        System.out.println("VUELO: " + vuelo.getID()[1] + " " + vuelo.getOrigen3()[VueloDis3] + " - " + vuelo.getDestino3()[VueloDis3]);
-                                        System.out.println("UBICADO: " + aeropuerto.getCiudad()[1] + " " + aeropuerto.getPais()[1]);
+                                        System.out.println("VUELO: " + vuelo.getID()[1] + " " +
+                                                vuelo.getOrigen3()[VueloDis3] + " - " + vuelo.getDestino3()[VueloDis3]);
+                                        System.out.println("UBICADO: " + aeropuerto.getCiudad()[1] + " "
+                                                + aeropuerto.getPais()[1]);
                                         System.out.println("PRECIO: " + vuelo.getPrecio()[1]);
                                         break;
                                     case 2:
                                         System.out.println("PATROCINADOR: " + privado.getPatrocinadores()[2]);
-                                        System.out.println("VUELO: " + vuelo.getID()[2] + " " + vuelo.getOrigen3()[VueloDis3] + " - " + vuelo.getDestino3()[VueloDis3]);
-                                        System.out.println("UBICADO: " + aeropuerto.getCiudad()[2] + " " + aeropuerto.getPais()[2]);
+                                        System.out.println("VUELO: " + vuelo.getID()[2] + " " +
+                                                vuelo.getOrigen3()[VueloDis3] + " - " + vuelo.getDestino3()[VueloDis3]);
+                                        System.out.println("UBICADO: " + aeropuerto.getCiudad()[2] + " "
+                                                + aeropuerto.getPais()[2]);
                                         System.out.println("PRECIO: " + vuelo.getPrecio()[2]);
                                         break;
                                     case 3:
                                         System.out.println("PATROCINADOR: " + privado.getPatrocinadores()[3]);
-                                        System.out.println("VUELO: " + vuelo.getID()[3] + " " + vuelo.getOrigen3()[VueloDis3] + " - " + vuelo.getDestino3()[VueloDis3]);
-                                        System.out.println("UBICADO: " + aeropuerto.getCiudad()[3] + " " + aeropuerto.getPais()[3]);
+                                        System.out.println("VUELO: " + vuelo.getID()[3] + " " +
+                                                vuelo.getOrigen3()[VueloDis3] + " - " + vuelo.getDestino3()[VueloDis3]);
+                                        System.out.println("UBICADO: " + aeropuerto.getCiudad()[3] + " "
+                                                + aeropuerto.getPais()[3]);
                                         System.out.println("PRECIO: " + vuelo.getPrecio()[3]);
                                         break;
                                 }
@@ -604,8 +656,10 @@ public class Main {
                                                     System.out.println();
                                                     System.out.println("SELECCIONA UN ASIENTO");
                                                     AsientoDisPub = sc.nextInt();
-                                                    if (AsientoDisPub < 0 || AsientoDisPub >= vuelo.getVuelo1privado6().length) {
-                                                        System.out.println("Asiento no válido. Por favor, intente de nuevo.");
+                                                    if (AsientoDisPub < 0 || AsientoDisPub >=
+                                                            vuelo.getVuelo1privado6().length) {
+                                                        System.out.println("Asiento no válido. Por favor," +
+                                                                " intente de nuevo.");
                                                         System.out.println(" ");
                                                         continue;
                                                     }
@@ -638,8 +692,10 @@ public class Main {
                                                     System.out.println();
                                                     System.out.println("SELECCIONA UN ASIENTO");
                                                     AsientoDis = sc.nextInt();
-                                                    if (AsientoDis < 0 || AsientoDis >= vuelo.getVuelo2privado7().length) {
-                                                        System.out.println("Asiento no válido. Por favor, intente de nuevo.");
+                                                    if (AsientoDis < 0 || AsientoDis >=
+                                                            vuelo.getVuelo2privado7().length) {
+                                                        System.out.println("Asiento no válido. Por favor, " +
+                                                                "intente de nuevo.");
                                                         System.out.println(" ");
                                                         continue;
                                                     }
@@ -672,8 +728,10 @@ public class Main {
                                                     System.out.println();
                                                     System.out.println("SELECCIONA UN ASIENTO");
                                                     AsientoDis = sc.nextInt();
-                                                    if (AsientoDis < 0 || AsientoDis >= vuelo.getVuelo3privado8().length) {
-                                                        System.out.println("Asiento no válido. Por favor, intente de nuevo.");
+                                                    if (AsientoDis < 0 || AsientoDis >=
+                                                            vuelo.getVuelo3privado8().length) {
+                                                        System.out.println("Asiento no válido. Por favor," +
+                                                                " intente de nuevo.");
                                                         System.out.println(" ");
                                                         continue;
                                                     }
@@ -706,8 +764,10 @@ public class Main {
                                                     System.out.println();
                                                     System.out.println("SELECCIONA UN ASIENTO");
                                                     AsientoDis = sc.nextInt();
-                                                    if (AsientoDis < 0 || AsientoDis >= vuelo.getVuelo4privado9().length) {
-                                                        System.out.println("Asiento no válido. Por favor, intente de nuevo.");
+                                                    if (AsientoDis < 0 || AsientoDis >=
+                                                            vuelo.getVuelo4privado9().length) {
+                                                        System.out.println("Asiento no válido. Por favor," +
+                                                                " intente de nuevo.");
                                                         System.out.println(" ");
                                                         continue;
                                                     }
@@ -743,7 +803,8 @@ public class Main {
                                 do {
                                     System.out.println("ELIJA LA COMPAÑÍA DE VUELO DE SU PREFERENCIA");
                                     for (int i = 0; i < companies.getBourget().length; i++) {
-                                        System.out.print(i + ". " + companies.getBourget()[i] + " " + " - " + aeropuerto.getCiudad()[i]);
+                                        System.out.print(i + ". " + companies.getBourget()[i] + " " +
+                                                " - " + aeropuerto.getCiudad()[i]);
                                         System.out.println();
                                     }
                                     System.out.println(" ");
@@ -760,7 +821,8 @@ public class Main {
                                 do {
                                     System.out.println("/// VUELOS DISPONIBLES ///");
                                     for (int i = 0; i < 4; i++) {
-                                        System.out.println(i + ". " + vuelo.getOrigen4()[i] + " - " + vuelo.getDestino4()[i]);
+                                        System.out.println(i + ". " + vuelo.getOrigen4()[i] +
+                                                " - " + vuelo.getDestino4()[i]);
                                     }
                                     VueloDis4 = sc.nextInt();
                                     if (VueloDis4 < 0 || VueloDis4 >= 4) {
@@ -774,26 +836,34 @@ public class Main {
                                 switch (Companie4) {
                                     case 0:
                                         System.out.println("PATROCINADOR: " + privado.getPatrocinadores()[0]);
-                                        System.out.println("VUELO: " + vuelo.getID()[0] + " " + vuelo.getOrigen4()[VueloDis4] + " - " + vuelo.getDestino4()[VueloDis4]);
-                                        System.out.println("UBICADO: " + aeropuerto.getCiudad()[0] + " " + aeropuerto.getPais()[0]);
+                                        System.out.println("VUELO: " + vuelo.getID()[0] + " " +
+                                                vuelo.getOrigen4()[VueloDis4] + " - " + vuelo.getDestino4()[VueloDis4]);
+                                        System.out.println("UBICADO: " + aeropuerto.getCiudad()[0] + " "
+                                                + aeropuerto.getPais()[0]);
                                         System.out.println("PRECIO: " + vuelo.getPrecio()[0]);
                                         break;
                                     case 1:
                                         System.out.println("PATROCINADOR: " + privado.getPatrocinadores()[1]);
-                                        System.out.println("VUELO: " + vuelo.getID()[1] + " " + vuelo.getOrigen4()[VueloDis4] + " - " + vuelo.getDestino4()[VueloDis4]);
-                                        System.out.println("UBICADO: " + aeropuerto.getCiudad()[1] + " " + aeropuerto.getPais()[1]);
+                                        System.out.println("VUELO: " + vuelo.getID()[1] + " " +
+                                                vuelo.getOrigen4()[VueloDis4] + " - " + vuelo.getDestino4()[VueloDis4]);
+                                        System.out.println("UBICADO: " + aeropuerto.getCiudad()[1] + " " +
+                                                aeropuerto.getPais()[1]);
                                         System.out.println("PRECIO: " + vuelo.getPrecio()[1]);
                                         break;
                                     case 2:
                                         System.out.println("PATROCINADOR: " + privado.getPatrocinadores()[2]);
-                                        System.out.println("VUELO: " + vuelo.getID()[2] + " " + vuelo.getOrigen4()[VueloDis4] + " - " + vuelo.getDestino4()[VueloDis4]);
-                                        System.out.println("UBICADO: " + aeropuerto.getCiudad()[2] + " " + aeropuerto.getPais()[2]);
+                                        System.out.println("VUELO: " + vuelo.getID()[2] + " " +
+                                                vuelo.getOrigen4()[VueloDis4] + " - " + vuelo.getDestino4()[VueloDis4]);
+                                        System.out.println("UBICADO: " + aeropuerto.getCiudad()[2] + " " +
+                                                aeropuerto.getPais()[2]);
                                         System.out.println("PRECIO: " + vuelo.getPrecio()[2]);
                                         break;
                                     case 3:
                                         System.out.println("PATROCINADOR: " + privado.getPatrocinadores()[3]);
-                                        System.out.println("VUELO: " + vuelo.getID()[3] + " " + vuelo.getOrigen4()[VueloDis4] + " - " + vuelo.getDestino4()[VueloDis4]);
-                                        System.out.println("UBICADO: " + aeropuerto.getCiudad()[3] + " " + aeropuerto.getPais()[3]);
+                                        System.out.println("VUELO: " + vuelo.getID()[3] + " " +
+                                                vuelo.getOrigen4()[VueloDis4] + " - " + vuelo.getDestino4()[VueloDis4]);
+                                        System.out.println("UBICADO: " + aeropuerto.getCiudad()[3] + " "
+                                                + aeropuerto.getPais()[3]);
                                         System.out.println("PRECIO: " + vuelo.getPrecio()[3]);
                                         break;
                                 }
@@ -825,8 +895,10 @@ public class Main {
                                                     System.out.println();
                                                     System.out.println("SELECCIONA UN ASIENTO");
                                                     AsientoDisPub = sc.nextInt();
-                                                    if (AsientoDisPub < 0 || AsientoDisPub >= vuelo.getVuelo5privado().length) {
-                                                        System.out.println("Asiento no válido. Por favor, intente de nuevo.");
+                                                    if (AsientoDisPub < 0 || AsientoDisPub >=
+                                                            vuelo.getVuelo5privado().length) {
+                                                        System.out.println("Asiento no válido. Por favor, " +
+                                                                "intente de nuevo.");
                                                         System.out.println(" ");
                                                         continue;
                                                     }
@@ -859,8 +931,10 @@ public class Main {
                                                     System.out.println();
                                                     System.out.println("SELECCIONA UN ASIENTO");
                                                     AsientoDis = sc.nextInt();
-                                                    if (AsientoDis < 0 || AsientoDis >= vuelo.getVuelo6privado().length) {
-                                                        System.out.println("Asiento no válido. Por favor, intente de nuevo.");
+                                                    if (AsientoDis < 0 || AsientoDis >=
+                                                            vuelo.getVuelo6privado().length) {
+                                                        System.out.println("Asiento no válido. Por favor," +
+                                                                " intente de nuevo.");
                                                         System.out.println(" ");
                                                         continue;
                                                     }
@@ -893,8 +967,10 @@ public class Main {
                                                     System.out.println();
                                                     System.out.println("SELECCIONA UN ASIENTO");
                                                     AsientoDis = sc.nextInt();
-                                                    if (AsientoDis < 0 || AsientoDis >= vuelo.getVuelo7privado().length) {
-                                                        System.out.println("Asiento no válido. Por favor, intente de nuevo.");
+                                                    if (AsientoDis < 0 || AsientoDis >=
+                                                            vuelo.getVuelo7privado().length) {
+                                                        System.out.println("Asiento no válido. Por favor, " +
+                                                                "intente de nuevo.");
                                                         System.out.println(" ");
                                                         continue;
                                                     }
@@ -927,8 +1003,10 @@ public class Main {
                                                     System.out.println();
                                                     System.out.println("SELECCIONA UN ASIENTO");
                                                     AsientoDis = sc.nextInt();
-                                                    if (AsientoDis < 0 || AsientoDis >= vuelo.getVuelo8privado().length) {
-                                                        System.out.println("Asiento no válido. Por favor, intente de nuevo.");
+                                                    if (AsientoDis < 0 || AsientoDis >=
+                                                            vuelo.getVuelo8privado().length) {
+                                                        System.out.println("Asiento no válido. Por favor, " +
+                                                                "intente de nuevo.");
                                                         System.out.println(" ");
                                                         continue;
                                                     }
@@ -965,7 +1043,8 @@ public class Main {
                         do {
                             System.out.println("AEROPUERTOS DISPONIBLES PUBLICOS");
                             for (int i = 0; i < aeropuerto.getNomAeropubl().length; i++) {
-                                System.out.print(i + ". " + aeropuerto.getNomAeropubl()[i] + " " + " - " + aeropuerto.getPais()[i]);
+                                System.out.print(i + ". " + aeropuerto.getNomAeropubl()[i] + " "
+                                        + " - " + aeropuerto.getPais()[i]);
                                 System.out.println();
                             }
                             System.out.println("/// ELIGE UN AEROPUERTO ///");
@@ -983,7 +1062,8 @@ public class Main {
                                 do {
                                     System.out.println("ELIJA LA COMPAÑÍA DE VUELO DE SU PREFERENCIA");
                                     for (int i = 0; i < companies.getKennedy().length; i++) {
-                                        System.out.print(i + ". " + companies.getKennedy()[i] + " " + " - " + aeropuerto.getCiudad()[i]);
+                                        System.out.print(i + ". " + companies.getKennedy()[i] + " "
+                                                + " - " + aeropuerto.getCiudad()[i]);
                                         System.out.println();
                                     }
                                     System.out.println(" ");
@@ -1016,15 +1096,20 @@ public class Main {
 
                                 switch (Companiepubl) {
                                     case 0:
-                                        System.out.println("DINERO GUBERNAMENTAL: " + publi.getDineroGObierno()[Companiepubl]);
-                                        System.out.println("VUELO: " + vuelo.getID()[0] + " " + vuelo.getOrigen3()[VueloDispub] + " - " + vuelo.getDestino2()[VueloDispub]);
-                                        System.out.println("UBICADO: " + aeropuerto.getCiudad()[0] + " " + aeropuerto.getPais()[0]);
+                                        System.out.println("DINERO GUBERNAMENTAL: " +
+                                                publi.getDineroGObierno()[Companiepubl]);
+                                        System.out.println("VUELO: " + vuelo.getID()[0] + " " +
+                                                vuelo.getOrigen3()[VueloDispub]+" - "+vuelo.getDestino2()[VueloDispub]);
+                                        System.out.println("UBICADO: " + aeropuerto.getCiudad()[0] + " "
+                                                + aeropuerto.getPais()[0]);
                                         System.out.println("PRECIO: " + vuelo.getPrecio()[0]);
                                         break;
                                     case 1:
                                         System.out.println("DINERO GUBERNAMENTAL: " + publi.getDineroGObierno()[Companiepubl]);
-                                        System.out.println("VUELO: " + vuelo.getID()[1] + " " + vuelo.getOrigen3()[VueloDispub] + " - " + vuelo.getDestino2()[VueloDispub]);
-                                        System.out.println("UBICADO: " + aeropuerto.getCiudad()[1] + " " + aeropuerto.getPais()[1]);
+                                        System.out.println("VUELO: " + vuelo.getID()[1] + " " +
+                                                vuelo.getOrigen3()[VueloDispub]+" - "+vuelo.getDestino2()[VueloDispub]);
+                                        System.out.println("UBICADO: " + aeropuerto.getCiudad()[1] + " "
+                                                + aeropuerto.getPais()[1]);
                                         System.out.println("PRECIO: " + vuelo.getPrecio()[1]);
                                         break;
                                     case 2:

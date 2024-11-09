@@ -1,3 +1,5 @@
+package airport;
+
 public class Vuelo {
 
     String Origen[] = {"Tokio", "Moscú", "Sídney", "Río de Janeiro"};
