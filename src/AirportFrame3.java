@@ -28,7 +28,7 @@ public class AirportFrame3 {
                 frame.setContentPane(segundaVentana.getBase());
                 frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
                 frame.pack();
-                frame.setSize(1080, 720);
+                frame.setSize(720, 720);
                 frame.setLocationRelativeTo(null);
                 frame.setResizable(false);
                 frame.setVisible(true);

@@ -13,6 +13,8 @@ public class AirportFrame {
     private JPanel JpanelB;
 
     public AirportFrame() {
+
+
         Continuar.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -28,7 +30,7 @@ public class AirportFrame {
 
 
                 segundoFrame.pack();
-                segundoFrame.setSize(1080, 720);
+                segundoFrame.setSize(720, 720);
                 segundoFrame.setLocationRelativeTo(null);
                 segundoFrame.setResizable(false);
                 segundoFrame.setVisible(true);

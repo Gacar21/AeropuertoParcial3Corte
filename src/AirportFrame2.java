@@ -13,6 +13,8 @@ public class AirportFrame2 {
 
     public AirportFrame2() {
 
+
+
         Publico.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -24,7 +26,7 @@ public class AirportFrame2 {
 
 
                 tercerFrame.pack();
-                tercerFrame.setSize(1080, 720);
+                tercerFrame.setSize(720, 720);
                 tercerFrame.setLocationRelativeTo(null);
                 tercerFrame.setResizable(false);
                 tercerFrame.setVisible(true);
@@ -47,7 +49,7 @@ public class AirportFrame2 {
                 frame.setContentPane(airportFrame.getBase());
                 frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
                 frame.pack();
-                frame.setSize(1080, 720);
+                frame.setSize(720, 720);
                 frame.setLocationRelativeTo(null);
                 frame.setResizable(false);
                 frame.setVisible(true);
