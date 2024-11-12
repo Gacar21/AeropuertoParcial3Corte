@@ -17,7 +17,7 @@ public class AirportFrame3 {
 
 
     public AirportFrame3() {
-        // Configuración inicial
+
         volverButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -33,6 +33,29 @@ public class AirportFrame3 {
                 frame.setResizable(false);
                 frame.setVisible(true);
                 currentFrame.dispose();
+            }
+        });
+        Suite.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
+                JFrame cuartoFrame = new JFrame("Aeropuerto Público");
+                AirportFrame4 cuartaVentana = new AirportFrame4();
+                cuartoFrame.setContentPane(cuartaVentana.getBase());
+                cuartoFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+
+                cuartoFrame.pack();
+                cuartoFrame.setSize(720, 720);
+                cuartoFrame.setLocationRelativeTo(null);
+                cuartoFrame.setResizable(false);
+                cuartoFrame.setVisible(true);
+
+
+                JFrame currentFrame = (JFrame) SwingUtilities.getWindowAncestor(Base3);
+                if (currentFrame != null) {
+                    currentFrame.dispose();
+                }
             }
         });
     }

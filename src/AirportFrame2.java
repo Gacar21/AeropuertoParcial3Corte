@@ -18,7 +18,7 @@ public class AirportFrame2 {
         Publico.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                // Creamos y mostramos el tercer frame
+
                 JFrame tercerFrame = new JFrame("Aeropuerto Público");
                 AirportFrame3 terceraVentana = new AirportFrame3();
                 tercerFrame.setContentPane(terceraVentana.getBase());
